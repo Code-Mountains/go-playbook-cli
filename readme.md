@@ -20,7 +20,7 @@ $ tree
 ```
 
 
-# 03 / demos / 01-gcflags
+# 03 / demos / 04-pgo
 
 #:~/go-playbook-cli/03/demos/04-pgo (main)$ go run .
 ```
@@ -47,4 +47,27 @@ $ tree
 ├── main.go
 └── results.go
 00 directories, 5 files
+```
+
+# 04 / demos / 01-go-plugin
+$ go build -buildmode plugin ./plugin.go 
+
+
+#:~/go-playbook-cli/04/demos/01-go-plugin/plugin (main)$ tree
+```
+.
+├── go.mod
+├── plugin.go
+└── plugin.so
+
+0 directories, 3 files
+```
+
+
+#:~/go-playbook-cli/04/demos/01-go-plugin/prog (main)$ 
+
+$ go run . -plugin ../plugin/plugin.so 
+```
+Executing action...
+2023/11/05 12:31:56 Did the thing
 ```
