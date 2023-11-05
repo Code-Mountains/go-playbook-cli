@@ -1,3 +1,4 @@
+# 03 / demos / 01-gcflags
 #:~/go-playbook-cli/03/demos/01-gcflags (main)$ go build -ldflags '-v'
 ```
 HEADER = -H5 -T0x401000 -R0x1000
@@ -19,19 +20,9 @@ $ tree
 ```
 
 
-$ tree
-```
-.
-├── bald-mountain_co.csv
-├── default.pgo
-├── go.mod
-├── main.go
-└── results.go
-00 directories, 5 files
-```
+# 03 / demos / 01-gcflags
 
-
-# /go-playbook-cli/03/demos/04-pgo (main)$ go run .
+#:~/go-playbook-cli/03/demos/04-pgo (main)$ go run .
 ```
 Elapsed:  215.771419ms
 ```
@@ -45,4 +36,15 @@ Elapsed:  192.98309ms
 $ go run -pgo auto .
 ```
 Elapsed:  210.260627ms
+```
+
+$ tree
+```
+.
+├── bald-mountain_co.csv
+├── default.pgo
+├── go.mod
+├── main.go
+└── results.go
+00 directories, 5 files
 ```
